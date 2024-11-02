@@ -127,7 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="MathM.hpp" />
     <ClInclude Include="MathV.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CatRender.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
