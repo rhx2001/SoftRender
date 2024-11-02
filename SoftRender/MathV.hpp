@@ -1,3 +1,4 @@
+#pragma once
 #include <vector>
 #include <iostream>
 #include <cmath>
@@ -83,6 +84,26 @@ public:
             sum += data[i] * other[i];
         }
         return sum;
+    }
+
+    VectorBase dot(const Matrix& other) const {
+        const size_t otherRow = other.rows();
+        const size_t otherCol = other.cols();
+        VectorBase<T, otherCol> result;
+        for (size_t i = 0; i < otherCol; i++) {
+            T sum = T();
+            for (size_t j = 0; j < N; j++) {
+                sum += (*this)[j] * other(j, i);
+            }
+            result[i] = sum;
+        }
+        return result;
+    }
+
+
+
+    size_t size() const {
+        return size_t(data.size());
     }
 
     friend std::ostream& operator<<(std::ostream& os, const VectorBase& v) {
