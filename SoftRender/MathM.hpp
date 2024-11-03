@@ -161,9 +161,9 @@ public:
         return result;
     }
 
-    Vector<T, R> dot(const Vector<T,R>& other) const {
+    VectorBase<T, R> dot(const VectorBase<T,R>& other) const {
         const size_t otherRow = other.size();
-        Vector<T, R> result;
+        VectorBase<T, R> result;
         for (size_t i = 0; i < rows_; i++) {
             T sum = T();
             for (size_t j = 0; j < otherRow; j++) {

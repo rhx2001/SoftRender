@@ -1,8 +1,12 @@
 #pragma once
+#include <cmath>
 #include <vector>
 #include <iostream>
-#include <cmath>
 #include <stdexcept>
+
+template <typename T, size_t N, size_t R>
+class Matrix;//向前声明，让两个函数不相互引用
+
 template <typename T, size_t N>
 class VectorBase {
 protected:
@@ -86,19 +90,18 @@ public:
         return sum;
     }
 
-    VectorBase dot(const Matrix& other) const {
-        const size_t otherRow = other.rows();
-        const size_t otherCol = other.cols();
-        VectorBase<T, otherCol> result;
-        for (size_t i = 0; i < otherCol; i++) {
-            T sum = T();
-            for (size_t j = 0; j < N; j++) {
-                sum += (*this)[j] * other(j, i);
+        template <size_t C>
+        VectorBase<T, C> dot(const Matrix<T, N, C>& other) const { //让Matrix的C传入VectorBase中
+            VectorBase<T, C> result;
+            for (size_t i = 0; i < C; ++i) {
+                T sum = T();
+                for (size_t j = 0; j < N; ++j) {
+                    sum += data[j] * other(j, i);
+                }
+                result[i] = sum;
             }
-            result[i] = sum;
+            return result;
         }
-        return result;
-    }
 
 
 

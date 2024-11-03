@@ -1,28 +1,2 @@
 ﻿  CatRender.cpp
-D:\个人\Soft render\SoftRender\SoftRender\MathV.hpp(89,20): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-  (编译源文件“CatRender.cpp”)
-      D:\个人\Soft render\SoftRender\SoftRender\MathV.hpp(89,20):
-      模板实例化上下文(最早的实例化上下文)为
-          D:\个人\Soft render\SoftRender\SoftRender\MathV.hpp(7,7):
-          在编译类模板“VectorBase”时
-  
-D:\个人\Soft render\SoftRender\SoftRender\MathV.hpp(89,33): error C2059: 语法错误:“&”
-  (编译源文件“CatRender.cpp”)
-  
-D:\个人\Soft render\SoftRender\SoftRender\MathV.hpp(90,33): error C3861: “other”: 找不到标识符
-  (编译源文件“CatRender.cpp”)
-  
-D:\个人\Soft render\SoftRender\SoftRender\MathV.hpp(91,33): error C3861: “other”: 找不到标识符
-  (编译源文件“CatRender.cpp”)
-  
-D:\个人\Soft render\SoftRender\SoftRender\MathV.hpp(96,37): error C3861: “other”: 找不到标识符
-  (编译源文件“CatRender.cpp”)
-      D:\个人\Soft render\SoftRender\SoftRender\MathV.hpp(96,42):
-      “other”: 函数声明必须可用，因为所有参数都不依赖于模板参数
-  
-D:\个人\Soft render\SoftRender\SoftRender\MathV.hpp(90,33): error C2065: “other”: 未声明的标识符
-  (编译源文件“CatRender.cpp”)
-  
-D:\个人\Soft render\SoftRender\SoftRender\MathV.hpp(91,33): error C2065: “other”: 未声明的标识符
-  (编译源文件“CatRender.cpp”)
-  
+  SoftRender.vcxproj -> F:\c艹学习\softshader\SoftRender\x64\Debug\SoftRender.exe
