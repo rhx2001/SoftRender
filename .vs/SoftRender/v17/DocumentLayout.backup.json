@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "D:\\\u4E2A\u4EBA\\Soft render\\SoftRender\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B83CFD65-67CB-4F7C-A079-B7E9D38D1C3A}|SoftRender\\SoftRender.vcxproj|D:\\\u4E2A\u4EBA\\Soft render\\SoftRender\\SoftRender\\MathV.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B83CFD65-67CB-4F7C-A079-B7E9D38D1C3A}|SoftRender\\SoftRender.vcxproj|solutionrelative:SoftRender\\MathV.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{B83CFD65-67CB-4F7C-A079-B7E9D38D1C3A}|SoftRender\\SoftRender.vcxproj|D:\\\u4E2A\u4EBA\\Soft render\\SoftRender\\SoftRender\\Utils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B83CFD65-67CB-4F7C-A079-B7E9D38D1C3A}|SoftRender\\SoftRender.vcxproj|solutionrelative:SoftRender\\Utils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B83CFD65-67CB-4F7C-A079-B7E9D38D1C3A}|SoftRender\\SoftRender.vcxproj|D:\\\u4E2A\u4EBA\\Soft render\\SoftRender\\SoftRender\\MathM.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B83CFD65-67CB-4F7C-A079-B7E9D38D1C3A}|SoftRender\\SoftRender.vcxproj|solutionrelative:SoftRender\\MathM.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B83CFD65-67CB-4F7C-A079-B7E9D38D1C3A}|SoftRender\\SoftRender.vcxproj|D:\\\u4E2A\u4EBA\\Soft render\\SoftRender\\SoftRender\\Utils.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B83CFD65-67CB-4F7C-A079-B7E9D38D1C3A}|SoftRender\\SoftRender.vcxproj|solutionrelative:SoftRender\\Utils.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B83CFD65-67CB-4F7C-A079-B7E9D38D1C3A}|SoftRender\\SoftRender.vcxproj|D:\\\u4E2A\u4EBA\\Soft render\\SoftRender\\SoftRender\\CatRender.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B83CFD65-67CB-4F7C-A079-B7E9D38D1C3A}|SoftRender\\SoftRender.vcxproj|solutionrelative:SoftRender\\CatRender.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B83CFD65-67CB-4F7C-A079-B7E9D38D1C3A}|SoftRender\\SoftRender.vcxproj|D:\\\u4E2A\u4EBA\\Soft render\\SoftRender\\SoftRender\\MathV.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B83CFD65-67CB-4F7C-A079-B7E9D38D1C3A}|SoftRender\\SoftRender.vcxproj|solutionrelative:SoftRender\\MathV.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,39 +34,68 @@
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Utils.hpp",
+              "DocumentMoniker": "D:\\\u4E2A\u4EBA\\Soft render\\SoftRender\\SoftRender\\Utils.hpp",
+              "RelativeDocumentMoniker": "SoftRender\\Utils.hpp",
+              "ToolTip": "D:\\\u4E2A\u4EBA\\Soft render\\SoftRender\\SoftRender\\Utils.hpp",
+              "RelativeToolTip": "SoftRender\\Utils.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-04T12:44:32.354Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MathM.hpp",
               "DocumentMoniker": "D:\\\u4E2A\u4EBA\\Soft render\\SoftRender\\SoftRender\\MathM.hpp",
               "RelativeDocumentMoniker": "SoftRender\\MathM.hpp",
               "ToolTip": "D:\\\u4E2A\u4EBA\\Soft render\\SoftRender\\SoftRender\\MathM.hpp",
               "RelativeToolTip": "SoftRender\\MathM.hpp",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAmwEcAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-29T14:56:56.082Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Utils.cpp",
+              "DocumentMoniker": "D:\\\u4E2A\u4EBA\\Soft render\\SoftRender\\SoftRender\\Utils.cpp",
+              "RelativeDocumentMoniker": "SoftRender\\Utils.cpp",
+              "ToolTip": "D:\\\u4E2A\u4EBA\\Soft render\\SoftRender\\SoftRender\\Utils.cpp*",
+              "RelativeToolTip": "SoftRender\\Utils.cpp*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-04T13:19:06.708Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "CatRender.cpp",
               "DocumentMoniker": "D:\\\u4E2A\u4EBA\\Soft render\\SoftRender\\SoftRender\\CatRender.cpp",
               "RelativeDocumentMoniker": "SoftRender\\CatRender.cpp",
               "ToolTip": "D:\\\u4E2A\u4EBA\\Soft render\\SoftRender\\SoftRender\\CatRender.cpp",
               "RelativeToolTip": "SoftRender\\CatRender.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAACqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-30T12:44:53.719Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "MathV.hpp",
               "DocumentMoniker": "D:\\\u4E2A\u4EBA\\Soft render\\SoftRender\\SoftRender\\MathV.hpp",
               "RelativeDocumentMoniker": "SoftRender\\MathV.hpp",
-              "ToolTip": "D:\\\u4E2A\u4EBA\\Soft render\\SoftRender\\SoftRender\\MathV.hpp*",
-              "RelativeToolTip": "SoftRender\\MathV.hpp*",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAWwFgAAAAgAAAAAAAAAA==",
+              "ToolTip": "D:\\\u4E2A\u4EBA\\Soft render\\SoftRender\\SoftRender\\MathV.hpp",
+              "RelativeToolTip": "SoftRender\\MathV.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFkAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-20T02:10:20.464Z",
               "EditorCaption": ""

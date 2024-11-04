@@ -10,6 +10,11 @@ private:
 public:
 	Matrix():data(R, std::vector<T>(N, T())), rows_(0), cols_(0) {}
     Matrix(size_t rows, size_t cols): data(rows, std::vector<T>(cols, T())), rows_(rows), cols_(cols) {}
+    Matrix(size_t rows, size_t cols, T num) : data(rows, std::vector<T>(cols, T())), rows_(rows), cols_(cols) {
+        for (int i = 0; i < R; i++) {
+            data[i][i] = num;
+        }
+    }
     Matrix(std::initializer_list<std::initializer_list<T>> list) {
         rows_ = list.size();
         if (rows_ != R) {
@@ -33,6 +38,16 @@ public:
 
     const T& operator()(size_t row, size_t col) const {
         return data[row][col];
+    }
+
+    Matrix<T, N, R> TT() const {
+        Matrix<T, N, R> result(N, R);
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < R; j++) {
+                result(i, j) = (*this)(j, i);
+            }
+        }
+        return result;
     }
 
     Matrix operator+(const Matrix& other) const {
