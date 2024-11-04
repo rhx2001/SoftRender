@@ -12,4 +12,9 @@ public:
 		trans(2, 3) = Pos[2];
 		return trans;
 	}
+
+	template<typename T>
+	static Matrix<T, 4, 4>Rotate(const Vector<T, 3> degree) {
+
+	}
 };
