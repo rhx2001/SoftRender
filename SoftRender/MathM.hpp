@@ -176,6 +176,11 @@ public:
         return result;
     }
 
+    Matrix det() const {
+        Matrix result;
+    }
+
+
     VectorBase<T, R> dot(const VectorBase<T,R>& other) const {
         const size_t otherRow = other.size();
         VectorBase<T, R> result;

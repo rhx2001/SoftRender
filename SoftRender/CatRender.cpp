@@ -8,5 +8,5 @@ int main() {
 	Matrix<int, 2, 2> m = { {1,2},{3,4} };
 	Matrix<int, 2, 2> t = { {1,2},{4,5} };
 	Matrix<float, 3, 2> q = { {1,2},{3,4},{5,6} };
-	std::cout << a<<"\n"<<a-b<<"\n"<<a+b<<"\n"<<a*b*100<<"\n"<<a.dot(b)<<"\n"<<c<<"\n"<<m.dot(t)<<"\n"<<m.dot(a)<<"\n"<<a.dot(m).dot(t)<<"\n"<<q.TT()<<"\n"<< Utils::Transform(Vector<float, 3>({1,2,3}));
+	std::cout << Utils::Translate(Vector<float, 3>({ 1,2,3 }))<<" "<<Utils::Rotate(Vector<float, 3>({0,0,0}), 45.0f);
 }
