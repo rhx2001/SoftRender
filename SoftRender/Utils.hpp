@@ -1,6 +1,5 @@
 #pragma once
-#include"MathV.hpp"
-#include"MathM.hpp"
+#include"My_Math.hpp"
 #include<cmath>
 #include<iostream>
 constexpr auto MY_PI = 3.1415926f;
@@ -21,10 +20,11 @@ public:
 		float a = angle / 180 * MY_PI;
 		Matrix<T, 4, 4> I(4, 4, 1.0f), N({ { 0.0f,-z,y,0.0f }, { z,0.0f,-x,0.0f }, { -y,x,0.0f,0.0f }, { 0.0f,0.0f,0.0f,1.0f } }), rotation;
 		Vector<T, 4> n({x,y,z,0});
-		std::cout << N << "\n";
 		rotation = (I * cos(a) +   n.dot(n) * (1 - cos(a)) + sin(a));
+		std::cout << rotation.dot(N) << "\n"<< n.dot(n) <<"\n";
 		rotation = rotation.dot(N);
-		N(3, 3) = 1;
+		rotation(3, 3) = 1;
+
 		return rotation;
 	}
 };

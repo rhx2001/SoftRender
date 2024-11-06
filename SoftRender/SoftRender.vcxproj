@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClInclude Include="MathM.hpp" />
     <ClInclude Include="MathV.hpp" />
+    <ClInclude Include="My_Math.hpp" />
     <ClInclude Include="My_type.hpp" />
     <ClInclude Include="Utils.hpp" />
   </ItemGroup>

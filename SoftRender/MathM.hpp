@@ -138,13 +138,14 @@ public:
         return result;
     }
 
-    Matrix dot(const Matrix& other) {
+    template<typename T, size_t C, size_t Q>
+    Matrix<T,R,Q> dot(const Matrix<T, C, Q>& other) {
         const size_t otherRow = other.rows_;
         const size_t otherCol = other.cols_;
         if (N != otherRow) {
             throw std::invalid_argument("Matrix dimensions must match for multiplication");
         }
-        Matrix result(rows_, otherCol) ;
+        Matrix<T, R, Q> result ;
         for (size_t  i = 0; i < rows_; i++) {
             for (size_t  j = 0; j < otherRow; j++) {
                 T sum=T();
