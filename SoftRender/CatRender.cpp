@@ -1,5 +1,3 @@
-#include"MathV.hpp"
-#include"MathM.hpp"
 #include"Utils.hpp"
 int main() {
 	Vector<int, 2> a({ 1,2 });
@@ -7,8 +5,8 @@ int main() {
 	Vector<int, 3> c = {1,2,3};
 	Matrix<int, 2, 2> m = { {1,2},{3,4} };
 	Matrix<int, 2, 2> t = { {1,2},{4,5} };
-	Matrix<float, 3, 2> q = { {1,2},{3,4},{5,6} };
-	std::cout << Utils::Translate(Vector<float, 3>({ 1,2,3 }))<<" "<<Utils::Rotate(Vector<float, 3>({1,0,1}), 45.0f);
+	Matrix3f q = { {1,2,3},{3,4,3},{5,6,4} };
+	std::cout << Trans::Translate(Vector<float, 3>({ 1,2,3 }))<<" "<<Trans::Rotate(Vector<float, 3>({1,0,1}), 45.0f);
 	Matrix<int, 2, 2> z = m.dot(t);
 	//z(1, 1) = 3;
 	//std::cout << z;
