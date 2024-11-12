@@ -181,6 +181,103 @@ public:
         Matrix result;
     }
 
+    void lu_decomposition(Matrix<T, R, R>& L, Matrix<T, R, R>& U) const {
+        if (R != N) {
+            throw std::invalid_argument("Matrix must be square for LU decomposition");
+        }
+
+        // 初始化L和U矩阵
+        L = Matrix<T, R, R>(R, R, 0);  // L初始化为0矩阵
+        U = Matrix<T, R, R>(*this);    // U初始化为当前矩阵的副本
+
+        // L的对角线元素设为1
+        for (size_t i = 0; i < R; i++) {
+            L(i, i) = 1;
+        }
+
+        // 执行LU分解
+        for (size_t k = 0; k < R - 1; k++) {
+            for (size_t i = k + 1; i < R; i++) {
+                if (std::abs(U(k, k)) < std::numeric_limits<T>::epsilon()) {
+                    throw std::runtime_error("Matrix is singular or nearly singular");
+                }
+
+                T factor = U(i, k) / U(k, k);
+                L(i, k) = factor;
+
+                for (size_t j = k; j < R; j++) {
+                    U(i, j) -= factor * U(k, j);
+                }
+            }
+        }
+    }
+
+    // 前向替换求解Ly = b
+    Vector<T, R> forward_substitution(const Matrix<T, R, R>& L, const Vector<T, R>& b) const {
+        Vector<T, R> y;
+        for (size_t i = 0; i < R; i++) {
+            T sum = 0;
+            for (size_t j = 0; j < i; j++) {
+                sum += L(i, j) * y[j];
+            }
+            y[i] = (b[i] - sum) / L(i, i);
+        }
+        return y;
+    }
+
+    // 后向替换求解Ux = y
+    Vector<T, R> backward_substitution(const Matrix<T, R, R>& U, const Vector<T, R>& y) const {
+        Vector<T, R> x;
+        for (int i = R - 1; i >= 0; i--) {
+            T sum = 0;
+            for (size_t j = i + 1; j < R; j++) {
+                sum += U(i, j) * x[j];
+            }
+            if (std::abs(U(i, i)) < std::numeric_limits<T>::epsilon()) {
+                throw std::runtime_error("Matrix is singular");
+            }
+            x[i] = (y[i] - sum) / U(i, i);
+        }
+        return x;
+    }
+
+    // 矩阵求逆方法
+    Matrix<T, R, R> inverse() const {
+        if (R != N) {
+            throw std::invalid_argument("Matrix must be square for inverse");
+        }
+
+        // 创建L和U矩阵
+        Matrix<T, R, R> L, U;
+        lu_decomposition(L, U);
+
+        // 创建单位矩阵I
+        Matrix<T, R, R> I(R, R, 0);
+        for (size_t i = 0; i < R; i++) {
+            I(i, i) = 1;
+        }
+
+        // 求解逆矩阵
+        Matrix<T, R, R> inverse_matrix(R, R);
+        for (size_t i = 0; i < R; i++) {
+            // 构造单位矩阵的第i列
+            Vector<T, R> b;
+            for (size_t j = 0; j < R; j++) {
+                b[j] = I(j, i);
+            }
+
+            // 解方程LUx = b
+            Vector<T, R> y = forward_substitution(L, b);
+            Vector<T, R> x = backward_substitution(U, y);
+
+            // 将结果放入逆矩阵的第i列
+            for (size_t j = 0; j < R; j++) {
+                inverse_matrix(j, i) = x[j];
+            }
+        }
+
+        return inverse_matrix;
+    }
 
     VectorBase<T, R> dot(const VectorBase<T,R>& other) const {
         const size_t otherRow = other.size();
