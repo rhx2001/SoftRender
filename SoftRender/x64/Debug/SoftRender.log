@@ -1,2 +1,11 @@
 ﻿  CatRender.cpp
+D:\个人\Soft render\SoftRender\SoftRender\draw.h(24,10): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+  (编译源文件“CatRender.cpp”)
+  
+D:\个人\Soft render\SoftRender\SoftRender\draw.h(27,21): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+  (编译源文件“CatRender.cpp”)
+  
+D:\个人\Soft render\SoftRender\SoftRender\draw.h(30,18): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+  (编译源文件“CatRender.cpp”)
+  
   SoftRender.vcxproj -> D:\个人\Soft render\SoftRender\x64\Debug\SoftRender.exe

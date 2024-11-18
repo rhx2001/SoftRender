@@ -1,5 +1,5 @@
 #pragma once
-#include"My_Math.hpp"
+#include"My_Math.h"
 #include<cmath>
 #include<iostream>
 
@@ -24,7 +24,6 @@ public:
 		std::cout << rotation.dot(N) << "\n"<< n.dot(n) <<"\n";
 		rotation = rotation.dot(N);
 		rotation(3, 3) = 1.0f;
-
 		return rotation;
 	}
 };

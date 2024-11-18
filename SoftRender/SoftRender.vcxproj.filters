@@ -15,24 +15,30 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MathV.hpp">
+    <ClInclude Include="MathV.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="MathM.hpp">
+    <ClInclude Include="MathM.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Utils.hpp">
+    <ClInclude Include="Transformer.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="My_type.hpp">
+    <ClInclude Include="My_Math.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="My_Math.hpp">
+    <ClInclude Include="tgaimage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CatRender.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tgaimage.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

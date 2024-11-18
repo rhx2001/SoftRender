@@ -1,6 +1,6 @@
 #pragma once
-#include"MathV.hpp"
-#include"MathM.hpp"
+#include"MathV.h"
+#include"MathM.h"
 constexpr auto MY_PI = 3.1415926f;
 
 typedef Matrix<float, 3, 3> Matrix3f;
