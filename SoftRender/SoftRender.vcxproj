@@ -130,6 +130,8 @@
     <ClInclude Include="Draw.h" />
     <ClInclude Include="MathM.h" />
     <ClInclude Include="MathV.h" />
+    <ClInclude Include="mesh.h" />
+    <ClInclude Include="model.h" />
     <ClInclude Include="My_Math.h" />
     <ClInclude Include="tgaimage.h" />
     <ClInclude Include="Transformer.h" />

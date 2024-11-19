@@ -9,9 +9,10 @@ typedef Matrix<int, 3, 3> Matrix3i;
 typedef Matrix<int, 4, 4> Matrix4i;
 typedef Vector<float, 4> Vector4f;
 typedef Vector<float, 3> Vector3f;
-typedef Vector<int, 3> Vector3i;
+typedef Vector<float, 2> Vector2f;
 typedef Vector<int, 4> Vector4i;
-
+typedef Vector<int, 3> Vector3i;
+typedef Vector<int, 2> Vector2i;
 
 
 

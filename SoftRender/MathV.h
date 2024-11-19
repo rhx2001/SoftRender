@@ -127,16 +127,25 @@ template <typename T>
 class Vector<T, 2> : public VectorBase<T, 2> {
 public:
     using VectorBase<T, 2>::VectorBase;
+    T& x = (*this)[0];
+    T& y = (*this)[1];
 };
 
 template <typename T>
 class Vector<T, 3> : public VectorBase<T, 3> {
 public:
     using VectorBase<T, 3>::VectorBase;
+    T& x = (*this)[0];
+    T& y = (*this)[1];
+    T& z = (*this)[2];
 };
 
 template <typename T>
 class Vector<T, 4> : public VectorBase<T, 4> {
 public:
     using VectorBase<T, 4>::VectorBase;
+    T& x = (*this)[0];
+    T& y = (*this)[1];
+    T& z = (*this)[2];
+    T& w = (*this)[3];
 };
