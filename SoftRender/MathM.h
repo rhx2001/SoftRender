@@ -279,9 +279,9 @@ public:
         return inverse_matrix;
     }
 
-    VectorBase<T, R> dot(const VectorBase<T,R>& other) const {
+    Vector<T, R> dot(const Vector<T,R>& other) const {
         const size_t otherRow = other.size();
-        VectorBase<T, R> result;
+        Vector<T, R> result;
         for (size_t i = 0; i < rows_; i++) {
             T sum = T();
             for (size_t j = 0; j < otherRow; j++) {

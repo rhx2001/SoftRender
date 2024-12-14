@@ -28,5 +28,20 @@ public:
 			}
 		}
 	}
+	static void triangle(Vector2i t0, Vector2i t1, Vector2i t2, TGAImage& image, TGAColor color) {
+		if (t0.y == t1.y && t0.y == t2.y) return;
+		//根据y的大小对坐标进行排序
+		if (t0.y > t1.y) std::swap(t0, t1);
+		if (t0.y > t2.y) std::swap(t0, t2);
+		if (t1.y > t2.y) std::swap(t1, t2);
+		int max_height = (t2.y - t0.y);
+		int second_half = t2.y - t1.y;
+		for (int i = t0.y; i < t2.y; i++) {
+			int alpha = float(i)/max_height;
+			int beta = i < t1.y ? float(i) / t1.y : float((i - t1.y)) / float(t2.y-t1.y);
+			Vector2i A = t0 + (t2 - t0) * alpha;
+			Vector2i B = second_half ? t1 + (t2 - t1) * beta : t0 + (t1 - t0) * beta;
+		}
+	}
 
 };

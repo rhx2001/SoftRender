@@ -50,28 +50,28 @@ Matrix<T, R, N> operator*(const T a, const Matrix<T, R, N> b) {
 }
 
 template<typename T, size_t N>
-VectorBase<T, N> operator-(const T& other, const VectorBase<T, N>& b) {
-    VectorBase<T, N> result;
+Vector<T, N> operator-(const T& other, const Vector<T, N>& b) {
+    Vector<T, N> result;
     for (size_t i = 0; i < N; ++i) {
-        result[i] = b[i] - other;
+        result[i] = other - b[i];  // 确保标量在左侧
     }
     return result;
 }
 
 template<typename T, size_t N>
-VectorBase<T, N> operator+(const T& other, const VectorBase<T, N>& b) {
-    VectorBase<T, N> result;
+Vector<T, N> operator+(const T& other, const Vector<T, N>& b) {
+    Vector<T, N> result;
     for (size_t i = 0; i < N; ++i) {
-        result[i] = b[i] + other;
+        result[i] = other + b[i];
     }
     return result;
 }
 
 template<typename T, size_t N>
-VectorBase<T, N> operator*(const T& other, const VectorBase<T, N>& b) {
-    VectorBase<T, N> result;
+Vector<T, N> operator*(const T& other, const Vector<T, N>& b) {
+    Vector<T, N> result;
     for (size_t i = 0; i < N; ++i) {
-        result[i] = b[i] * other;
+        result[i] = other * b[i];
     }
     return result;
 }
